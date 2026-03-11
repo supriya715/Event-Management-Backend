@@ -72,7 +72,13 @@ public class AdminController
 		   return ResponseEntity.status(500).body("Failed to Add Event Manager ... !!"); 
 	   }
   }
-  
+	
+  @GetMapping("/status")
+  public String status() 
+	{
+    return "Event Management Backend running successfully on AWS Elastic Beanstalk";
+  }
+	
   @GetMapping("/viewalleventmanagers")
   public ResponseEntity<List<Manager>> viewalleventmanagers()
   {
