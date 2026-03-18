@@ -30,6 +30,15 @@ public class AdminController
           return ResponseEntity.status(500).body("Login failed: " + e.getMessage());
       }
   }
+  @GetMapping("/testmail")
+public String testMail() {
+    mailService.sendEmail(
+        "minikamatma123@gmail.com", // must be verified
+        "Test Email from AWS SES",
+        "Your email service is working successfully 🚀"
+    );
+    return "Mail Sent Successfully!";
+}
 
   @GetMapping("/viewallcustomers")
   public ResponseEntity<List<Customer>> viewallcustomers()
