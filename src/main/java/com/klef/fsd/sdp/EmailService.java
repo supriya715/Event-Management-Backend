@@ -27,7 +27,7 @@ public class EmailService {
                                 .text(Content.builder().data(body).build())
                                 .build())
                         .build())
-                .source("your-verified-email@gmail.com") // MUST be verified in SES
+                .source("minikamatma123@gmail.com") // MUST be verified in SES
                 .build();
 
         sesClient.sendEmail(request);
