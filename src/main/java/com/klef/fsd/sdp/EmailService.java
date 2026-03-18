@@ -1,4 +1,4 @@
-package com.yourpackage.service;
+package com.klef.fsd.sdp.service;
 
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.services.ses.*;
