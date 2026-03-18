@@ -7,7 +7,7 @@ public class AdminController
   private AdminService adminService;
 
   @Autowired
-  private MailService mailService;
+  private EMailService mailService;
 
   @PostMapping("/checkadminlogin")
   public ResponseEntity<?> checkadminlogin(@RequestBody Admin admin)
